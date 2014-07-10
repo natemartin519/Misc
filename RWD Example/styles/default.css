@@ -1,0 +1,201 @@
+body, html{
+   	margin: 0px;  
+}
+
+/***********  Global      ***********/
+.clear {
+	clear: both;
+}
+
+.font-body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.sm, .md, .lg, .xl {
+	display: none;
+}
+
+.page-wrap {
+   	background-image: url(/images/ricepaper.jpg);
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-position: center center;		
+}
+
+.container {
+	max-width: 1080px;
+	margin: 0px auto;	
+}
+
+/***********  Header      ***********/
+header {
+	text-align: center;
+}
+
+header hgroup * {
+	margin: 0px;
+}
+
+header hgroup h1 {	
+	padding-top: 4.5em;
+	font-size: 1.5em;
+}
+
+header hgroup h3 {
+	font-size: 1em;
+}
+
+header nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: #D8D8D8;
+}
+
+header nav a {
+	display: block;
+	text-decoration: none; 
+}
+
+header nav a:hover {
+	background-color: #FFFFFF;
+}
+
+/***********  Picture     ***********/
+.picture {
+	position: relative;
+	width: 1600px;
+	left: -260px;	
+	padding: 15px 0px 10px;
+}
+
+.picture img {
+	width: 100%;
+	height: auto;
+	border-style: solid;
+	border-color: #444444;
+	border-width: 1px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 8px #000000;
+}
+
+/***********  Sidebar     ***********/
+.sidebar {
+	float: left;	
+	width: 200px;
+	margin: 5px;
+	padding: 5px;
+	background-color: #FFFFFF;
+}
+
+/***********  Main        ***********/
+.post {
+	overflow: hidden;
+	margin: 5px;
+	padding: 5px;
+	background-color: #FFFFFF;	
+}
+
+/***********  Footer      ***********/
+footer {
+	margin: 5px;
+	padding: 5px;
+	background-color: #FFD8D8;
+}
+
+/***********  Responsive  ***********/
+@media all and (min-width:480px) {
+	.xs {
+		display: none;
+	}
+
+	.sm {
+		display: block;
+	}
+
+	header hgroup h1 {
+		padding-top: 1em;
+	}
+
+	header nav a {
+		display: inline;
+		margin: 0.5em;
+		font-size: 1em;
+	}
+
+	header nav a:hover {
+		background-color: transparent;
+		color: red;
+	}	
+}
+
+@media all and (min-width:720px) {
+	.sm {
+		display: none;
+	}
+
+	.md {
+		display: block;
+	}
+
+	header hgroup h1 {			
+		font-size: 2em;
+	}
+
+	header hgroup h3 {
+		font-size: 1.17em;
+	}
+
+	header nav a {
+		margin: 1em;
+		font-size: 1.25em;
+	}
+
+	.post, .sidebar, footer {
+		border-style: solid;
+		border-width: 1px;
+		border-color: #BBBBBB;
+		border-radius: 5px;
+		box-shadow: 0px 0px 2px #777777;
+	}
+}
+
+@media all and (min-width:1080px) {
+	.md {
+		display: none;
+	}
+
+	.lg {
+		display: block;
+	}
+
+	header hgroup h1 {
+		font-size: 2.5em;
+	}
+
+	header nav a {
+		margin: 1.5em;
+		font-size: 1.5em;
+	}	
+}
+
+@media all and (min-width: 1600px) {
+	.lg {
+		display: none;
+	}
+
+	.xl {
+		display: block;
+	}
+
+	header hgroup h1 {
+		font-size: 3em;
+	}
+
+	header nav a {
+		margin: 1.75em;
+		font-size: 1.75em;
+	}
+}

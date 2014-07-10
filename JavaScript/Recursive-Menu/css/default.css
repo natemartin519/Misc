@@ -1,0 +1,50 @@
+html {
+    color: #fff;
+    font-size : 110%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul ul {
+    margin: 0;
+    padding: 0;
+    margin-top: -32px;
+    padding-left: 230px;
+    display: none;
+}
+
+li:hover > ul {
+    display: block;
+}
+
+li {
+    border: solid #999 1px;
+    background-color: #ddd;
+    padding: 10px 10px;
+    width: 220px;
+    height: 20px;
+}
+
+li:hover {
+    background-color: #aaa;
+}
+
+a {
+    padding-left: 9px;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #222;
+}
+
+li.parent::before {
+    position: relative;
+    left: 210px;
+    content : '\bb';
+}
